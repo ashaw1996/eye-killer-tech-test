@@ -1,0 +1,74 @@
+<footer class="text-primary py-8">
+    <div class="container mx-auto px-4 ">
+        <div class="flex flex-wrap justify-between items-center">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <a href="{{ siteUrl }}" class="">{% include '_components/logo' with { fill: '1C1C1C', size: '32' } %}</a>
+                <p class="text-lg font-bold pt-4">Cancer Freephone Nurseline</p>
+                <p class="text-3xl font-bold text-secondary py-1">0800 783 3339</p>
+                <p class="text-sm">Monday, Wednesday &amp; Friday 9am to 1pm</p>
+                <div class="flex space-x-2 mt-4">
+                    <a href="{{company.socialMediaLink}}"><img class="w-8" src="/dist/images/Facebook.svg" alt="Facebook"></a>
+                    <a href="{{company.socialMediaLink2}}"><img class="w-8" src="/dist/images/Twitter.svg" alt="Twitter"></a>
+                    <a href="{{company.socialMediaLink3}}"><img class="w-8" src="/dist/images/Linkedin.svg" alt="LinkedIn"></a>
+                    <a href="{{company.socialMediaLink4}}"><img class="w-8" src="/dist/images/Instagram.svg" alt="Instagram"></a>
+                    <a href="{{company.socialMediaLink5}}"><img class="w-8" src="/dist/images/Youtube.svg" alt="YouTube"></a>
+                    <a href="{{company.socialMediaLink6}}"><img class="w-8" src="/dist/images/TikTok.svg" alt="TikTok"></a>
+                </div>
+                <div class="py-8">
+                  <img class="w-40" src="/dist/images/fundraising.png" alt="Fundraising Regulator">
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+              <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col space-y-4">
+                  <a href="#" class="hover:underline">Get Support</a>
+                  <a href="#" class="hover:underline">Support Finder</a>
+                  <a href="#" class="hover:underline">Cancer Prevention</a>
+                  <a href="#" class="hover:underline">Get Involved</a>
+                  <a href="#" class="hover:underline">About Us</a>
+                  <a href="#" class="hover:underline">Health Professionals</a>
+                </div>
+                <div class="flex flex-col space-y-4">
+                  <a href="#" class="hover:underline">Research</a>
+                  <a href="#" class="hover:underline">Our Impact</a>
+                  <a href="#" class="hover:underline">News</a>
+                  <a href="#" class="hover:underline">Job Opportunities</a>
+                  <a href="#" class="hover:underline">Contact Us</a>
+                  <a href="#" class="hover:underline">Donate</a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/3">
+                <span class="block text-lg font-bold text-secondary pb-2">Join our mailing list</span>
+                <span class="block pb-2">Sign up for our latest news and ways you can get involved.</span>
+                <form class="grid md:grid-cols-2 gap-4">
+                    <div class="">
+                        <input type="text" placeholder="" class="w-full px-4 py-2 border border-secondary opacity-60 rounded">
+                    </div>
+                    <div class="">
+                        <input type="text" placeholder="" class="w-full px-4 py-2 border border-secondary opacity-60 rounded">
+                    </div>
+                    <div class="col-span-2">
+                        <input type="email" placeholder="" class="w-full px-4 py-2 border border-secondary opacity-60 rounded">
+                    </div>
+                    <div class="space-y-4 sm:space-y-0 sm:flex justify-between col-span-2 sm:space-x-2">
+                      <p class="text-sm max-w-xs block">By signing up to the mailing list you agree to the <a href="#" class="hover:underline">Privacy Policy</a></p>
+                      <div>
+                      {% include '_components/button/secondarySolid' with { size: 'lg', type: 'button', text: 'Sign Up', submit: true } %}
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 border-t border-opacity-80 mt-4 pt-4">
+          <a href="#" class="underline underline-offset">Terms &amp; Condition</a>
+          <a href="#" class="underline underline-offset">Privacy Policy</a>
+          <a href="#" class="underline underline-offset">Manage Cookies</a>
+          <a href="#" class="underline underline-offset">Accessibility Statement</a>
+      </div>
+      <div class="pt-4">
+        <span class="block text-sm text-gray-500">© {{ now|date('Y') }} Cancer Focus Northern Ireland. Charity Number: NIC 101307</span>
+      </div>
+    </div>
+
+</footer>

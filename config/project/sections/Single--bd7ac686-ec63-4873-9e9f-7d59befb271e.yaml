@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f86b32e9-d60f-4014-8ded-e3ae867beccf # Page
+handle: Single
+maxAuthors: 1
+name: Single
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  9c83b374-9f6d-4001-9b4f-d4c3a0cc81ba: # ektt
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/home.twig
+    uriFormat: __home__
+type: single

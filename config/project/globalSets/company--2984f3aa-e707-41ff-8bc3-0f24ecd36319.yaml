@@ -1,0 +1,108 @@
+fieldLayouts:
+  96b6d0e3-166d-4a07-9e40-07c16b2697e6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Facebook Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc09af86-7bdc-476a-a32f-930451d0ada3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: socialMediaLink2
+            includeInCards: false
+            instructions: null
+            label: 'Twitter Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69ac8696-1a55-4864-a8eb-fa3dab43d8cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: socialMediaLink3
+            includeInCards: false
+            instructions: null
+            label: 'Linkedin Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01d78597-eea2-450c-b96e-554af29fc8b3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: socialMediaLink4
+            includeInCards: false
+            instructions: null
+            label: 'Instragram Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fcfba1b-5f66-444d-b403-c24428f8ff44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: socialMediaLink5
+            includeInCards: false
+            instructions: null
+            label: 'Youtube Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72931a85-4bc1-4eb6-9be2-55d0c2773fd6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T13:31:17+00:00'
+            elementCondition: null
+            fieldUid: 2444b125-4acc-49bc-83e5-2c63cb985f2c # Social Media Link
+            handle: socialMediaLink6
+            includeInCards: false
+            instructions: null
+            label: 'TikTok Link '
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7dd81071-2972-4c24-8dc4-4d076b2a6168
+            userCondition: null
+            warning: null
+            width: 100
+        name: Socail
+        uid: 5daf7f19-d96a-4836-b399-0a8fbf6d70ba
+        userCondition: null
+handle: company
+name: Company
+sortOrder: 2

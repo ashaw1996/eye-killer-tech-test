@@ -1,0 +1,145 @@
+color: green
+fieldLayouts:
+  5b1e5ebf-4b75-41db-a447-5a4e8eb75b3d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: 17a11142-4296-49cb-b6fb-5cb40920971d # Block Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67cf2580-fd67-4f9b-a1ac-8216d2efeb42
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: 41d126f2-e2d6-492f-8d79-a9b33b616d45 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Block Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3804ad57-5841-4f24-bd3c-9b6a484828de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: 6eadbb68-590f-4e94-ad64-16b7826eb762 # CTA Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 100d1bdb-afb1-42fc-bb28-e2b89b3e8b93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6228ed06-bfc4-485f-9f74-8ebeb7f58f97
+            userCondition: null
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: f54105a8-ad74-4699-be61-2f4060f9cbc4 # Reverse
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2935844-763a-4939-b27e-30ed298a2f45
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: 282b076a-809b-4842-a988-887ce0e8c409 # Padding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c4f47d6-32fc-4026-9506-c339b5d2bab7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: d5b11a7c-f117-49a0-8bcf-a8dea3c3224b
+            userCondition: null
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: f7f4a5c3-bd1c-4946-8541-aa6d43be8a4f # Background Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 175393a3-76c3-4008-b741-d1b366b0e8f4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-29T10:04:25+00:00'
+            elementCondition: null
+            fieldUid: f24ea04f-c660-456c-bb46-34c773f7a6d5 # Text Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1b8d7f0-1cd2-408c-b537-ef81afe96a62
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: ce5b1ae7-919c-4216-bb9e-13391b87670e
+        userCondition: null
+handle: imageText
+hasTitleField: false
+icon: table-columns
+name: 'Image Text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

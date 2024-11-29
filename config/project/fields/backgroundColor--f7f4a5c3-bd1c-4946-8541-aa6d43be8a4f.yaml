@@ -1,0 +1,77 @@
+columnSuffix: null
+handle: backgroundColor
+instructions: null
+name: 'Background Color'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Primary
+        -
+          - value
+          - primary
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Secondary
+        -
+          - value
+          - secondary
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light Secondary'
+        -
+          - value
+          - lightSecondary
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Light
+        -
+          - value
+          - gray-100
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Dark
+        -
+          - value
+          - gray-500
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - white
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,37 @@
+color: green
+fieldLayouts:
+  a2fe605e-2bb3-49a5-a193-563e79bd3f09:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-29T11:21:05+00:00'
+            elementCondition: null
+            fieldUid: 282b076a-809b-4842-a988-887ce0e8c409 # Padding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d87be21f-4c00-4a41-8cf4-d620cd69938e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 94629d3d-e556-4421-a906-7c59ae92b03c
+        userCondition: null
+handle: serviceSearch
+hasTitleField: false
+icon: magnifying-glass
+name: 'Service Search'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

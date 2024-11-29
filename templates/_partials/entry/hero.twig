@@ -1,0 +1,25 @@
+{%- minify -%}
+{% embed '_components/section' with { padding: "none", container: false } %}
+  {% block sectionContent %}
+  <div class="">
+    <div class="hero -mt-20 relative z-30 text-white flex justify-center items-center ">
+          <span class="text-5xl md:text-7xl font-extrabold text-center m-auto max-w-xl redactor py-8 xl:py-0 space-y-8 px-4 md:px-0">{{ entry.blockTitle }}</span>
+    </div>
+  {% if entry.image|length %}
+    {% set bgImage = entry.image.one %}
+    <img src="{{ bgImage.url }}"  class="hero absolute top-0 z-10 object-cover w-full " alt="{{ bgImage|striptags }}" />
+  {% endif %}
+  </div>
+  {% endblock %}
+{% endembed %}
+{%- endminify -%}
+<style> 
+.hero{
+ height:800px;
+}
+.ken-burns { 
+  animation: kenBurnsEffect 20s infinite alternate; } 
+@keyframes kenBurnsEffect { 0% { transform: scale(1) translate(0, 0); } 
+100% { transform: scale(1.2) translate(-10%, -10%); } 
+}
+</style>

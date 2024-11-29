@@ -1,0 +1,84 @@
+{% minify %}
+   <!doctype html>
+   <html class="no-js" lang="{{ craft.app.language|slice(0,2) }}">
+      <head>
+         <meta charset="utf-8">
+         <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         
+         {% if craft.app.config.env != 'production' %}
+            <meta name="robots" content="noindex">
+         {% endif %}
+            
+         {# Preload Fonts #}
+         {% set preloadedFonts = [
+            'Foco-Light',
+            'Foco-Regular',
+            'Foco-Medium',
+            'Foco-Bold',
+            'Foco-Heavy' ] %}
+         {% for font in preloadedFonts %}
+            <link rel="preload" href="/dist/fonts/{{ font }}.woff2" as="font" crossorigin>
+         {% endfor %}
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+         {# CSS #}
+         {% set cssUrl = siteUrl ~ 'dist/' ~ rev('css/app.css')  %}
+
+         {% if block('criticalCss')|length and craft.app.config.env == 'production' %}
+            <style>
+               {% block criticalCss %}{% endblock %}
+            </style>
+            <link rel="preload" href="{{ cssUrl }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+            <noscript>
+               <link rel="stylesheet" href="{{ cssUrl }}">
+            </noscript>
+         {% else %}
+            <link rel="stylesheet" href="{{ cssUrl }}">
+         {% endif %}
+            
+         <style>
+            [x-cloak] { display: none; }
+         </style>
+
+         {# Favicons #}
+         {{ source('_components/favicons', ignore_missing = true) }}
+
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+         {# <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37493078-16"></script>
+         <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-37493078-16');
+            gtag('config', 'AW-619145167');
+         </script> #}
+      </head>
+
+      <body class="overflow-x-hidden">
+         <div id="app" class="overflow-x-hidden">
+            {% block body %}{% endblock %}
+         </div>
+         
+         {# Javascript #}
+
+         {% js %}
+            function toggleMenu() {
+               document.body.classList.toggle("nav-active")
+            }
+         {% endjs %}
+
+         {# Javascript #}
+         <script async src="https://static.addtoany.com/menu/page.js"></script>
+         <script src="{{ siteUrl }}dist/{{ rev('js/manifest.js') }}"></script>
+         <script src="{{ siteUrl }}dist/{{ rev('js/vendor.js') }}"></script>
+         <script src="{{ siteUrl }}dist/{{ rev('js/index.js') }}" defer></script>
+         <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x.x/dist/tailwind.min.css" rel="stylesheet">
+      </body>
+
+   </html>
+{% endminify %}

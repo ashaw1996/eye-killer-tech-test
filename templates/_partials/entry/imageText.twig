@@ -1,0 +1,35 @@
+{%- minify -%}
+{% set classes = ["bg-" ~ entry.backgroundColor ,"text-" ~ entry.textColor] %}
+{% embed '_components/section' with { padding: entry.padding.value, container: false, class: classes|join(' ') } %}
+{% block sectionContent %} 
+    <div class="bg-{{entry.backgroundColor}}">
+    <div class="container">
+      <div class="px-4 md:px-0 flex flex-wrap lg:flex-nowrap space-y-10 md:space-y-0 {{ entry.reverse ? 'flex-row-reverse' }}">
+        <div class=" sm:ml-0  flex flex-col justify-center w-full mt-10 lg:mt-0 md:mb-10 xl:mb-0 lg:w-1/2 {{ entry.reverse ? 'order-1 lg:order-1 ml-auto px-2 md:px-0 md:pl-14 pr-0' : 'order-1 lg:order-2 mr-auto md:pr-14' }}">
+          {% if entry.blockContent|length %}
+            <div class="flex flex-col">
+              <div>                    
+                <span class="block pb-2 relative z-50 max-w-2xl redactor">{{ entry.blockContent }}</span>
+              </div>
+              <div class="flex space-x-4">
+                {% if entry.ctaButton|length %}
+                  {% for btn in entry.ctaButton %}
+                      {% include '_components/button/' ~ btn.buttonStyle with { size: 'lg', type: 'a', url: btn.buttonLink, text: btn.buttonText, playBtn:btn.playBtn } %}  
+                  {% endfor %}
+                {% endif %} 
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="w-full lg:mb-0 lg:w-1/2 {{ entry.reverse ? 'order-2 lg:order-1 mr-auto' : 'order-2 lg:order-2 ml-auto' }}">
+        {% if entry.image|length %}
+          {% set image = entry.image.one %}
+          <img src="{{ image.url }}"  class="rounded object-cover w-full " alt="{{ image|striptags }}" />
+        {% endif %}
+        </div>
+      </div>
+    </div>
+    </div>
+  {% endblock %}
+{% endembed %}
+{%- endminify -%}

@@ -1,0 +1,171 @@
+columnSuffix: null
+handle: ctaButton
+instructions: null
+name: 'CTA Button'
+searchable: false
+settings:
+  addRowLabel: 'Add a button'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Button Text'
+            -
+              - handle
+              - buttonText
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Button Link'
+            -
+              - handle
+              - buttonLink
+            -
+              - width
+              - ''
+            -
+              - type
+              - url
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Button Style'
+            -
+              - handle
+              - buttonStyle
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Primary Solid'
+                    -
+                      - value
+                      - primarySolid
+                    -
+                      - default
+                      - true
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Primary Outline'
+                    -
+                      - value
+                      - primaryOutline
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Secondary Solid'
+                    -
+                      - value
+                      - secondarySolid
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Secondary Outline'
+                    -
+                      - value
+                      - secondaryOutline
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Secondary Alt'
+                    -
+                      - value
+                      - secondaryAlt
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'White Solid'
+                    -
+                      - value
+                      - whiteSolid
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'White Outline'
+                    -
+                      - value
+                      - whiteOutline
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Underline
+                    -
+                      - value
+                      - underline
+                    -
+                      - default
+                      - false
+      -
+        - col5
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Play Button'
+            -
+              - handle
+              - playBtn
+            -
+              - width
+              - ''
+            -
+              - type
+              - lightswitch
+  defaults: null
+  maxRows: 2
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

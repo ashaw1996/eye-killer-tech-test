@@ -1,0 +1,37 @@
+  <header 
+  class="header w-full z-40 bg-transparent relative border-b border-opacity-20"
+  x-data="scrollToReveal()" 
+  x-ref="navbar"
+  x-on:scroll.window="scroll()"
+  x-bind:class="{
+    'scrolled': hasScrolled,
+    'nav-show': sticky,
+    'nav-hide': !sticky
+    }">
+  <div class="container flex justify-between align-center items-center w-full relative py-4 ">
+    <div class="block xl:hidden mt-4">
+     {% include '_components/mobileMenu.twig' %}
+    </div>
+    <a href="{{ siteUrl }}">{% include '_components/logo' with { fill: 'fff', size: '32' } %}</a>
+     <nav class="hidden xl:block">
+     {% for item in navigation.pageEntries %}
+        <a class="block text-xl font-semibold bg-transparent text-white" href="{{ item.url }}">{{ item }}</a>
+    {% endfor %}
+    </nav>
+    <div class="flex items-center space-x-4">
+      <div class="hidden xl:block">
+        {% include '_components/button/whiteOutline' with { size: 'lg', type: 'a', url: '/#', text: 'Fundraise' } %}  
+      </div>
+      <div>
+      {% include '_components/button/secondarySolid' with { size: 'lg', type: 'a', url: '/#', text: 'Donate', heart: true } %}  
+      </div>
+    </div>
+
+  </div>
+
+    </div>
+</header>
+
+<style>
+
+</style>

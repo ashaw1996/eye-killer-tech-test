@@ -1,0 +1,31 @@
+{%- minify -%}
+{% set classes = ["bg-" ~ entry.backgroundColor ,"text-" ~ entry.textColor] %}
+{% embed '_components/section' with { padding: entry.padding.value, container: false, class: classes|join(' ') } %}
+  {% block sectionContent %} 
+  <div class="container px-2 md:px-0 pt-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{entry.quickLinks|length}} gap-8 w-full">
+    {% for linkItem in entry.quickLinks %}
+      {% set link = linkItem.pageEntries.one %}
+<a href="{{ link ? link.url : '/#' }}" class="hover:opacity-40">
+    <div class="flex flex-col space-y-4">
+        <div class="">
+            <div class="rounded-lg overflow-hidden relative">
+                {% if linkItem.image|length %}
+                    {% set image = linkItem.image.one %}
+                    <img src="{{ image.url }}" class="rounded object-cover w-full" alt="{{ image|striptags }}" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent"></div>
+                {% endif %}
+                <div class="flex justify-center items-end absolute inset-0 text-white text-center pb-4">
+                    <span class="font-extrabold text-3xl text-white z-40"> {{ linkItem.title }} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+    {% endfor %}
+    </div>
+  </div>
+  {% endblock %}
+{% endembed %}
+{%- endminify -%}

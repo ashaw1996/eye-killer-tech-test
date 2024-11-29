@@ -1,0 +1,34 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: Simple
+options:
+  fontColor:
+    colors:
+      -
+        color: '#1C1C1C'
+        label: Primary
+      -
+        color: '#008097'
+        label: Secondary
+      -
+        color: '#E6F5F9'
+        label: 'Light Secondary'
+      -
+        color: '#FFFFFF'
+        hasBorder: true
+        label: White
+    columns: 2
+    documentColors: 4
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - '|'
+  - fontColor

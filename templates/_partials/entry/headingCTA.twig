@@ -1,0 +1,28 @@
+{%- minify -%}
+{% set classes = ["bg-" ~ entry.backgroundColor, "text-" ~ entry.textColor] %}
+  {% embed '_components/section' with { padding: entry.padding.value, container: false, class: classes|join(' ') } %}
+   {% block sectionContent %}
+    <div class="w-full relative">
+    {% if entry.image|length %}
+      {% set bgImage = entry.image.one %}
+      <div class=" flex flex-col items-center align-center justify-center {{ entry.bgCover ? 'bg-cover bg-center' : 'bg-no-repeat bg-center bg-contain' }}" style="height: 500px;  {{ entry.bgCover ? '' : 'background-size: 800px, 400px;' }}  background-image:url('{{ bgImage.url }}');">
+      {% else %}
+      <div>
+    {% endif %}
+          <div class="flex w-full relative z-50">
+            <div class="w-full h-full  px-2 xl:px-0">
+                  <span class="flex flex-col items-center text-center justify-center m-auto redactor block {{ entry.wider ? 'max-w-xl' : 'max-w-md' }}  leading-snug pt-4">{{ entry.textContent }}</span>
+                  {% if entry.ctaButton|length %}
+                  <div class="pt-6 text-center">
+                    {% for btn in entry.ctaButton %}
+                        {% include '_components/button/' ~ btn.buttonStyle with { type: 'a', url: btn.buttonLink, text: btn.buttonText, arrow: true } %}  
+                    {% endfor %}
+                  </div>
+                  {% endif %} 
+            </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+{% endembed %}
+{%- endminify -%}

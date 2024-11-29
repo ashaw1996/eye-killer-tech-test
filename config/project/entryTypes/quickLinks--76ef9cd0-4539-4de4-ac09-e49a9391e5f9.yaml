@@ -1,0 +1,91 @@
+color: green
+fieldLayouts:
+  dc5152e0-085a-46b1-837b-30d435a9dae4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-29T12:11:41+00:00'
+            elementCondition: null
+            fieldUid: 49ce3d28-9f64-486e-ae63-e3808b05a6b9 # Quick Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0c14dca-a407-45ab-8823-4eddf5d01a74
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-29T12:11:41+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: d4e84b67-14e4-4d3b-812c-90c7891937ef
+            userCondition: null
+          -
+            dateAdded: '2024-11-29T12:11:41+00:00'
+            elementCondition: null
+            fieldUid: f24ea04f-c660-456c-bb46-34c773f7a6d5 # Text Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 350f65df-e913-4ead-9e48-fc2841acac2f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-29T12:11:41+00:00'
+            elementCondition: null
+            fieldUid: f7f4a5c3-bd1c-4946-8541-aa6d43be8a4f # Background Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b6c5a3a7-883d-430a-b5ec-0c8514577130
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-11-29T12:11:41+00:00'
+            elementCondition: null
+            fieldUid: 282b076a-809b-4842-a988-887ce0e8c409 # Padding
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 533125d8-acb5-41f6-aa0f-377b50cf5851
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 1f92bcbd-e233-40c9-bd85-2f2903eecebd
+        userCondition: null
+handle: quickLinks
+hasTitleField: false
+icon: link
+name: 'Quick Links'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

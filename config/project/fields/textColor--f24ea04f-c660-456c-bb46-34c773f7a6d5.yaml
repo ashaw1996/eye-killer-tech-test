@@ -1,0 +1,66 @@
+columnSuffix: null
+handle: textColor
+instructions: null
+name: 'Text Color'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Primary
+        -
+          - value
+          - primary
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Secondary
+        -
+          - value
+          - secondary
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Light
+        -
+          - value
+          - gray-100
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Dark
+        -
+          - value
+          - gray-500
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - white
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

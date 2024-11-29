@@ -1,0 +1,29 @@
+{% extends "_layout/global" %}
+
+{# ------- Set header style ------- #}
+{% set headerStyle = 'transparent' %}
+
+{% do view.registerJsFile("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js") %}
+{% do view.registerCssFile("https://unpkg.com/flickity@2/dist/flickity.min.css") %}
+
+{% block content %}
+   {%- minify -%}
+
+      {# ------- Variables ------- #}
+
+      {# ------- Template ------- #}
+      {% for block in entry.contentBuilder.all() %}
+         {{ block.render }}
+      {% endfor %}
+   {%- endminify -%}
+{% endblock %}
+
+{# ------- Critical CSS ------- #}
+
+{% block criticalCss %}
+  {% if entry is defined %}
+    {% apply spaceless %}
+        {{ source ('_criticalCss/' ~ entry.slug ~ '.css', ignore_missing = true) }}
+    {% endapply %}
+  {% endif %}
+{% endblock %}

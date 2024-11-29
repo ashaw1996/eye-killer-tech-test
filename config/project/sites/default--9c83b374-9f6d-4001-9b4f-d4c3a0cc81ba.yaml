@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: ektt
+primary: true
+siteGroup: 0a51d012-4859-44dc-af78-578da0a3f2f3 # ektt
+sortOrder: 1

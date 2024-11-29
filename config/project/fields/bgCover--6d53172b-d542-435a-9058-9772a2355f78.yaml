@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: bgCover
+instructions: null
+name: 'Background Cover'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,7 @@
+Will attach env and db for viewing 
+Works with and built with Node -v 18
+npm i
+ddev start
+ddev import-db --file=ek-tt.sql
+ddev composer update 
+

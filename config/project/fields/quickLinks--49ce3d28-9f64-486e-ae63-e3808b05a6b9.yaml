@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: quickLinks
+instructions: null
+name: 'Quick Links'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 334b8324-b0f9-4ba8-82f6-4bc37a118256 # Quick Link
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

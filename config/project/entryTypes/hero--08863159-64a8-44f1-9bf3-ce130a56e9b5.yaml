@@ -1,0 +1,69 @@
+color: green
+fieldLayouts:
+  c823ae5a-b6b6-489b-bc05-f0221ff2abe2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-28T17:59:14+00:00'
+            elementCondition: null
+            fieldUid: cadfa51c-dc29-44fd-add5-4f7f9afc84d8 # Block Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6516a2ef-3b84-4743-81e7-1dae12a2b922
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-28T17:59:14+00:00'
+            elementCondition: null
+            fieldUid: 918d3af7-ad1a-434f-b87c-ac84fc3dcdc0 # General Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Sub Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 141d6c15-ff97-4746-b0a3-1f6f170f6fc1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-28T17:59:14+00:00'
+            elementCondition: null
+            fieldUid: 41d126f2-e2d6-492f-8d79-a9b33b616d45 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Hero Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b88ef5f-9501-45e8-89f3-29e1864c9845
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 80e0a6f5-9452-464e-b84a-baa0ea71adb5
+        userCondition: null
+handle: hero
+hasTitleField: false
+icon: mask
+name: Hero
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

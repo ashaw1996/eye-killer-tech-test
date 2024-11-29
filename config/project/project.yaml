@@ -1,0 +1,68 @@
+dateModified: 1732887155
+email:
+  fromEmail: andrewshaw1996@hotmail.com
+  fromName: ektt
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  general:
+    hasUrls: true
+    name: ' General'
+    settings:
+      path: dist/images
+    type: craft\fs\Local
+    url: $ASSETS_SITE_URL
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    0a4f3e90-77c6-4803-b404-50af025398ec: 'Page Link' # Page Link
+    0a51d012-4859-44dc-af78-578da0a3f2f3: ektt # ektt
+    4dff9616-c085-4873-971c-add15a8cabf0: Simple # Simple
+    6d53172b-d542-435a-9058-9772a2355f78: 'Background Cover' # Background Cover
+    6eadbb68-590f-4e94-ad64-16b7826eb762: 'CTA Button' # CTA Button
+    8a6a997d-4749-4e6b-ad86-4f16ac911030: 'Content Builder' # Content Builder
+    9c83b374-9f6d-4001-9b4f-d4c3a0cc81ba: ektt # ektt
+    17a11142-4296-49cb-b6fb-5cb40920971d: 'Block Content' # Block Content
+    41d126f2-e2d6-492f-8d79-a9b33b616d45: Image # Image
+    49ce3d28-9f64-486e-ae63-e3808b05a6b9: 'Quick Links' # Quick Links
+    76ef9cd0-4539-4de4-ac09-e49a9391e5f9: 'Quick Links' # Quick Links
+    79c943d6-6082-464c-8135-a80bc532aeb7: 'Service Search' # Service Search
+    282b076a-809b-4842-a988-887ce0e8c409: Padding # Padding
+    334b8324-b0f9-4ba8-82f6-4bc37a118256: 'Quick Link' # Quick Link
+    495b4890-5869-4caa-b979-2ac4e2294df5: Navigation # Navigation
+    918d3af7-ad1a-434f-b87c-ac84fc3dcdc0: 'General Text' # General Text
+    2444b125-4acc-49bc-83e5-2c63cb985f2c: 'Social Media Link' # Social Media Link
+    2984f3aa-e707-41ff-8bc3-0f24ecd36319: Company # Company
+    8309c2ab-1398-46f8-a651-36540b14d379: 'Image Text' # Image Text
+    8499a6ed-d60d-4637-9028-9c8efed08625: 'Heading CTA ' # Heading CTA 
+    08863159-64a8-44f1-9bf3-ce130a56e9b5: Hero # Hero
+    abe4721a-d848-4ed9-8d7c-bd225581ac40: Wider # Wider
+    b1c2f16e-57a8-43b9-80f5-015e38068f25: General # General
+    baccac8c-c5d6-4db2-a592-1d05ce957044: 'Full Width' # Full Width
+    bd7ac686-ec63-4873-9e9f-7d59befb271e: Single # Single
+    cadfa51c-dc29-44fd-add5-4f7f9afc84d8: 'Block Title' # Block Title
+    f7f4a5c3-bd1c-4946-8541-aa6d43be8a4f: 'Background Color' # Background Color
+    f24ea04f-c660-456c-bb46-34c773f7a6d5: 'Text Color' # Text Color
+    f86b32e9-d60f-4014-8ded-e3ae867beccf: Page # Page
+    f54105a8-ad74-4699-be61-2f4060f9cbc4: Reverse # Reverse
+plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: ektt
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles

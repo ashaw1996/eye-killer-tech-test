@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: contentBuilder
+instructions: null
+name: 'Content Builder'
+searchable: true
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 08863159-64a8-44f1-9bf3-ce130a56e9b5 # Hero
+    - 8309c2ab-1398-46f8-a651-36540b14d379 # Image Text
+    - 79c943d6-6082-464c-8135-a80bc532aeb7 # Service Search
+    - 8499a6ed-d60d-4637-9028-9c8efed08625 # Heading CTA 
+    - 76ef9cd0-4539-4de4-ac09-e49a9391e5f9 # Quick Links
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

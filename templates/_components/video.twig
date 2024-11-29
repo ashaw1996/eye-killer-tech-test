@@ -1,0 +1,15 @@
+{#
+   Video
+   Generate a video element 
+
+   @type {include}
+   @param {string/object} video
+   @param {string} videoClass
+
+#}
+
+<figure class="video w-full element video aspect-w-16 aspect-h-9 relative">
+    <video loop autoplay muted class="video w-full h-full">
+      <source src="{{ video.url }}" type="video/mp4">
+    </video>
+</figure>

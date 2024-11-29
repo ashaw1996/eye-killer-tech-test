@@ -1,0 +1,29 @@
+{% extends "_layout/base" %}
+
+{% block body %}
+
+	{% js %}
+	function scrollToReveal() {
+		return {
+			hasScrolled: false,
+			sticky: false,
+			lastPos: window.scrollY + 0,
+			scroll() {
+				this.hasScrolled = window.scrollY > this.$refs.navbar.offsetHeight;
+				this.sticky = window.scrollY > this.$refs.navbar.offsetHeight && this.lastPos > window.scrollY;
+				this.lastPos = window.scrollY;
+			}
+		}
+	}
+	{% endjs %}
+	
+  {# {% include '_components/mobileMenu' %} #}
+	{% include '_includes/header' %}
+
+	<main class="content">
+		{% block content %}
+		{% endblock %}
+	</main>
+
+	{% include '_includes/footer' %}
+{% endblock %}

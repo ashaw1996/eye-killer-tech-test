@@ -1,0 +1,17 @@
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1366px;
+$xxl: 1536px;
+
+@mixin responsive($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin mobilefirst($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}

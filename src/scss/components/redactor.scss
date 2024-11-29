@@ -1,0 +1,16 @@
+.redactor {
+    h2{
+        @apply text-4xl leading-none font-extrabold;
+        line-height: 1 !important;
+    }
+    h3{
+        @apply leading-none text-3xl font-extralight;
+        line-height: 1 !important;
+        margin: 0 0 10px !important;
+    }
+    h5{
+        @apply leading-none font-extrabold;
+        line-height: 1 !important;
+        margin: 0 0 10px !important;
+    }
+}
